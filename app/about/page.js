@@ -143,10 +143,19 @@ const Page = () => {
             </section>
 
             {/* Why Choose Us */}
-            <section className="mt-12">
-                <span className=" text-red-500 font-semibold flex justify-center items-center">Our Values</span>
-                <h1 className="flex justify-center items-center text-4xl font-bold mt-4">Why should you choose us ?</h1>
-                <p className="text-gray-500 flex justify-center items-center mt-4">We’re a group of friendly, creative, and passionate individuals that love working together to serve our clients</p>
+            <section className="mt-12 px-4 sm:px-6">
+                <span className="text-red-500 font-semibold flex justify-center items-center text-sm sm:text-base text-center">
+                    Our Values
+                </span>
+
+                <h1 className="text-center text-3xl sm:text-4xl font-bold mt-4 leading-tight">
+                    Why should you choose us?
+                </h1>
+
+                <p className="text-gray-500 text-center text-sm sm:text-base mt-4 max-w-2xl mx-auto leading-7">
+                    We’re a group of friendly, creative, and passionate individuals
+                    that love working together to serve our clients.
+                </p>
             </section>
 
             {/* Our Values */}
