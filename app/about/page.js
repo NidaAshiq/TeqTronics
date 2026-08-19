@@ -178,44 +178,21 @@ const Page = () => {
 
                 {/* idea */}
                 <div className="max-w-6xl mx-auto px-6 py-16">
-
                     <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
-                        {/* Left Side */}
-                        <div className="w-full md:w-1/2 flex justify-center">
-                            <div className="relative w-full flex justify-center">
+                        {/* Right Side - Content */}
+                        <div className="w-full md:w-1/2 order-1 md:order-2">
 
-                                <div className="relative rounded-3xl p-2 w-full">
-                                    <Image
-                                        src="/idea.png"
-                                        width={1200}
-                                        height={1200}
-                                        alt="Idea image"
-                                        className="w-full max-w-none object-contain"
-                                    />
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        {/* Right Side */}
-                        <div className="w-full md:w-1/2">
-
-                            {/* Step */}
                             <span className="inline-block text-red-600 font-semibold uppercase tracking-widest text-sm mb-3">
                                 Step One
                             </span>
 
-                            {/* Heading */}
                             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-5">
                                 Idea
                             </h2>
 
-                            {/* Line */}
                             <div className="w-16 h-1 bg-red-600 rounded-full mb-6"></div>
 
-                            {/* Description */}
                             <p className="text-gray-600 text-base md:text-lg leading-8">
                                 Startup owners who want to build great products have different
                                 ideas of how they want their startup to be. At that point, they
@@ -225,10 +202,9 @@ const Page = () => {
                                 efficient and automated process.
                             </p>
 
-                            {/* Small Feature */}
                             <div className="flex items-center gap-4 mt-8">
 
-                                <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xl">
+                                <div className="w-12 h-12 shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xl">
                                     01
                                 </div>
 
@@ -236,12 +212,35 @@ const Page = () => {
                                     <h3 className="font-bold text-gray-900">
                                         From Idea to Reality
                                     </h3>
+
                                     <p className="text-sm text-gray-500 mt-1">
                                         We turn your ideas into meaningful digital products.
                                     </p>
                                 </div>
+
                             </div>
                         </div>
+
+
+                        {/* Left Side - Image */}
+                        <div className="w-full md:w-1/2 flex justify-center order-2 md:order-1">
+
+                            <div className="relative w-full flex justify-center">
+                                <div className="relative rounded-3xl p-2 w-full">
+
+                                    <Image
+                                        src="/idea.png"
+                                        width={1200}
+                                        height={1200}
+                                        alt="Idea image"
+                                        className="w-full h-auto object-contain"
+                                    />
+
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -329,33 +328,8 @@ const Page = () => {
 
                     <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
-                        {/* Left Side */}
-                        <div className="w-full md:w-1/2 flex justify-center">
-                            <div className="relative w-full">
-
-                                {/* Decorative Circle */}
-                                {/* <div className="absolute -top-6 -left-6 w-24 h-24 bg-red-100 rounded-full"></div> */}
-
-                                {/* Image Box */}
-                                <div className="relative  rounded-3xl p-8 ">
-                                    <Image
-                                        src="/development.png"
-                                        width={1200}
-                                        height={1200}
-                                        alt="Idea image"
-                                        className="w-full max-w-none object-contain"
-                                    />
-                                </div>
-
-                                {/* Bottom Decoration */}
-                                {/* <div className="absolute -bottom-5 -right-5 w-16 h-16 bg-red-600 rounded-full"></div> */}
-
-                            </div>
-                        </div>
-
-
-                        {/* Right Side */}
-                        <div className="w-full md:w-1/2">
+                        {/* Right Side - Content */}
+                        <div className="w-full md:w-1/2 order-1 md:order-2">
 
                             {/* Step */}
                             <span className="inline-block text-red-600 font-semibold uppercase tracking-widest text-sm mb-3">
@@ -372,13 +346,21 @@ const Page = () => {
 
                             {/* Description */}
                             <p className="text-gray-600 text-base md:text-lg leading-8">
-                                Owners are involved in every stage of a product development process which is done seamlessly and with ease. Quite awesome! and that is why startup owners are focused on using our platform to build their products. From effectively being able to select a tech team which consists primarily of a Front end, Back end, Product Designer and a Product Manager, to the product being developed against the design, effective collaboration between the product owner and talent team to the product being fully ready for deployment
+                                Owners are involved in every stage of a product development
+                                process which is done seamlessly and with ease. Quite awesome!
+                                and that is why startup owners are focused on using our
+                                platform to build their products. From effectively being able
+                                to select a tech team which consists primarily of a Front end,
+                                Back end, Product Designer and a Product Manager, to the product
+                                being developed against the design, effective collaboration
+                                between the product owner and talent team to the product being
+                                fully ready for deployment.
                             </p>
 
                             {/* Small Feature */}
                             <div className="flex items-center gap-4 mt-8">
 
-                                <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xl">
+                                <div className="w-12 h-12 shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xl">
                                     03
                                 </div>
 
@@ -386,12 +368,35 @@ const Page = () => {
                                     <h3 className="font-bold text-gray-900">
                                         From design to code
                                     </h3>
+
                                     <p className="text-sm text-gray-500 mt-1">
                                         We turn your designs into meaningful digital products.
                                     </p>
                                 </div>
+
                             </div>
                         </div>
+
+
+                        {/* Left Side - Image */}
+                        <div className="w-full md:w-1/2 flex justify-center order-2 md:order-1">
+
+                            <div className="relative w-full">
+
+                                {/* Image Box */}
+                                <div className="relative rounded-3xl p-8">
+                                    <Image
+                                        src="/development.png"
+                                        width={1200}
+                                        height={1200}
+                                        alt="Development image"
+                                        className="w-full max-w-none object-contain"
+                                    />
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -471,30 +476,8 @@ const Page = () => {
 
                     <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
-                        {/* Left Side */}
-                        <div className="w-full md:w-1/2 flex justify-center">
-                            <div className="relative w-full">
-
-
-                                {/* Image Box */}
-                                <div className="relative  rounded-3xl p-8 ">
-                                    <Image
-                                        src="/deployment.png"
-                                        width={1200}
-                                        height={1200}
-                                        alt="Idea image"
-                                        className="w-full max-w-none object-contain"
-                                    />
-                                </div>
-
-                        
-
-                            </div>
-                        </div>
-
-
-                        {/* Right Side */}
-                        <div className="w-full md:w-1/2">
+                        {/* Right Side - Content */}
+                        <div className="w-full md:w-1/2 order-1 md:order-2">
 
                             {/* Step */}
                             <span className="inline-block text-red-600 font-semibold uppercase tracking-widest text-sm mb-3">
@@ -511,13 +494,21 @@ const Page = () => {
 
                             {/* Description */}
                             <p className="text-gray-600 text-base md:text-lg leading-8">
-                                Owners are involved in every stage of a product development process which is done seamlessly and with ease. Quite awesome! and that is why startup owners are focused on using our platform to build their products. From effectively being able to select a tech team which consists primarily of a Front end, Back end, Product Designer and a Product Manager, to the product being developed against the design, effective collaboration between the product owner and talent team to the product being fully ready for deployment
+                                Owners are involved in every stage of a product development
+                                process which is done seamlessly and with ease. Quite awesome!
+                                and that is why startup owners are focused on using our
+                                platform to build their products. From effectively being able
+                                to select a tech team which consists primarily of a Front end,
+                                Back end, Product Designer and a Product Manager, to the product
+                                being developed against the design, effective collaboration
+                                between the product owner and talent team to the product being
+                                fully ready for deployment.
                             </p>
 
                             {/* Small Feature */}
                             <div className="flex items-center gap-4 mt-8">
 
-                                <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xl">
+                                <div className="w-12 h-12 shrink-0 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-xl">
                                     05
                                 </div>
 
@@ -525,12 +516,36 @@ const Page = () => {
                                     <h3 className="font-bold text-gray-900">
                                         From testing to deployment
                                     </h3>
+
                                     <p className="text-sm text-gray-500 mt-1">
                                         We deploy the tested and bug free products.
                                     </p>
                                 </div>
+
                             </div>
                         </div>
+
+
+                        {/* Left Side - Image */}
+                        <div className="w-full md:w-1/2 flex justify-center order-2 md:order-1">
+
+                            <div className="relative w-full">
+
+                                {/* Image Box */}
+                                <div className="relative rounded-3xl p-8">
+                                    <Image
+                                        src="/deployment.png"
+                                        width={1200}
+                                        height={1200}
+                                        alt="Deployment image"
+                                        className="w-full max-w-none object-contain"
+                                    />
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </section>
