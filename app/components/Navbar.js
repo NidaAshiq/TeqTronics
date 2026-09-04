@@ -74,6 +74,30 @@ const Navbar = () => {
               Contact
             </Link>
 
+            <Link
+              href="/feestructure"
+              className="relative text-[15px] font-medium text-gray-800
+              hover:text-red-600 transition-colors duration-300
+              after:absolute after:left-0 after:-bottom-2
+              after:h-[2px] after:w-0 after:bg-red-600
+              after:transition-all after:duration-300
+              hover:after:w-full"
+            >
+              Fee Structure
+            </Link>
+
+            <Link
+              href="/projects"
+              className="relative text-[15px] font-medium text-gray-800
+              hover:text-red-600 transition-colors duration-300
+              after:absolute after:left-0 after:-bottom-2
+              after:h-[2px] after:w-0 after:bg-red-600
+              after:transition-all after:duration-300
+              hover:after:w-full"
+            >
+              Projects
+            </Link>
+
             {/* Get Started */}
             {/* <Link href="/getstarted">
               <button
